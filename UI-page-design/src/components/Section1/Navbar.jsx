@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-        <div className="px-20 mx-auto bg-blue-900">
+        <div className="px-20 mx-auto">
                   <div className="flex justify-between align-middle py-5">
         <div className="logo">LOGO</div>
         <div className="primary-menu">
@@ -15,7 +15,7 @@ const Navbar = () => {
             </ul>
         </div>
         <div className="button">
-            <button className='cursor-pointer border-0 px-4 py-2 bg-amber-700 rounded-2xl'>Click Here</button>
+            <button className='cursor-pointer border-0 px-4 py-2 bg-black rounded-2xl text-white'>Click Here</button>
         </div>
       </div>
         </div>

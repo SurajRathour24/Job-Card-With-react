@@ -1,12 +1,18 @@
-import React from 'react'
+import React from "react";
+import Card from "./Card";
 
-
-const heroRightContent = () => {
+const heroRightContent = (props) => {
+  console.log(props.users);
+  
   return (
-    <div className='h-full bg-blue-300 w-3/4 p-3'>
-      
+    <div id="right-content" className="flex overflow-x-auto no-scrollbar">
+      { props.users.map(function(elems, id)
+      {
+        console.log(id)
+        return < Card id={id+1} img={elems.img} intro={elems.intro} tag={ elems.tag } color={elems.color} />
+      }) }
     </div>
-  )
-}
+  );
+};
 
-export default heroRightContent
+export default heroRightContent;
